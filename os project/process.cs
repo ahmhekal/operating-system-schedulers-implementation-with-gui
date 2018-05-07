@@ -40,6 +40,17 @@ namespace os_project
             get;
             set;
         }
-
+        public string name
+        {
+            get;
+            set;
+        }
+        public process(){
+        
+        }
+        public process(process p)
+        {
+            arrival_time = p.arrival_time; priority = p.priority; name = p.name; burst_time = p.burst_time; waiting = p.waiting; remaining_time = p.remaining_time; real_end = p.real_end;
+        }
     }
 }
